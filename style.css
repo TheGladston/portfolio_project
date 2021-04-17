@@ -401,22 +401,131 @@ header{
      padding-bottom: 1rem;
  }
 
+ .btn{
+    background: #7F00FF;
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    background: linear-gradient(to right, #E100FF, #7F00FF);
+    font-family: var(--font-action);
+    font-size: 1rem;
+    color: #eee;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 0 .1rem .8rem rgba(0,0,0,0.4); 
+    outline: none;
+ }
+
+ .btn:hover{
+    color: #29323c;
+ }
+
+ .btn:active{
+     box-shadow: 0 0 0 0 rgba(0,0,0,0.4), inset .1rem .1rem .8rem rgba(0,0,0,0.4);
+ }
+
  .card-info button{
      width: 8rem;
      height: 2.5rem;
-     background: #7F00FF;
-     background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
-     background: linear-gradient(to right, #E100FF, #7F00FF);
-     font-family: var(--font-action);
-     font-size: 1rem;
-     color: #eee;
-     border-radius: .5rem;
-     border: none;
-     box-shadow: 0 .1rem .8rem rgba(0,0,0,0.4); 
  }
 
  .card:hover .card-info{
      bottom: 2rem;
      opacity: 1;
      visibility: visible;
+ }
+
+ .contact-sesion{
+    width: 100%;
+    height: 100vh;
+    background-color: #525151;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .contact-wrapper{
+     width: 60%;
+     height: 35rem;
+     display: flex;
+     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
+ }
+
+ .contact-left{
+    width: 35%;
+    opacity: .5;
+    background: 
+        linear-gradient(rgba(65, 65, 65, 0.6), rgba(182, 182, 182, 0.9)),
+        url(images/contact-bg.jpg);
+    background-size: cover;
+ }
+
+ .contact-right{
+     width: 65%;
+     background-color: #eee;
+     padding: 1rem 3rem 3rem 3rem;
+ }
+
+ .contact-sesion h1{
+     width: 100%;
+     text-align: center;
+     font-family: var(--font-primary);
+     color: #29323c;
+     font-size: 3rem;
+     font-weight: lighter;
+ }
+
+ .contact-sesion form{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .input-group{
+     position: relative;
+ }
+
+ .field{
+     /* background-color: red; */
+     background: transparent;
+     border: none;
+     width: 20rem;
+     font-size: 1.1rem;
+     font-family: var(--font-secundary);
+     border-bottom: 2px dashed #636363;
+     height: 3rem;
+     outline: none;
+     margin: 2rem 0;
+ }
+
+ .input-group textarea{
+     padding-top: 1rem;
+     max-width: 25rem;
+     max-height: 3rem;
+     
+ }
+
+ .field-label{
+     position: absolute;
+     left: 0;
+     top: 1.2rem;
+     font-size: 1.2rem;
+     font-family: var(--font-secundary);
+     text-transform: uppercase;
+     transition: all .3s;
+ }
+
+ .field:focus ~ label{
+     top: 0;
+     font-size: 1rem;
+ }
+
+ .field:focus{
+     border-bottom: 1px solid;
+ }
+
+ .btn-submit{
+     text-transform: uppercase;
+     width: 55%;
+     height: 2rem;
+     outline: none;
  }
