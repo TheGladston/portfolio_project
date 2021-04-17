@@ -15,6 +15,10 @@
     --font-action: "Mulish", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .hamburger{
     /* background-color: red; */
     width: 2rem;
