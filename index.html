@@ -46,7 +46,7 @@
                     <li class="menu-item"><a href="#knowledges-sesion-jump" class="menu-link">Conhecimento</a></li>
                     <li class="menu-item"><a href="#project-sesion-jump" class="menu-link">Projetos</a></li>
                     <li class="menu-item"><a href="#contact-sesion-jump" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#budget-sesion-jump" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -232,6 +232,32 @@
                         <button type="submit" class="btn btn-submit">Enviar</button>
                     </form>
                 </div>
+            </div>
+        </section>
+
+        <section class="budget-sesion" id="budget-sesion-jump">
+            <div class="budget-wrapper">
+                <h1>Faça um Orçamento</h1>
+                <form>
+                    <label for="amoutn">Quantas Páginas?</label>
+                    <input type="number" min="1" name="amount" id="amount">
+                    <label for="js">Preciso que use JavaScript</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-yes">
+                            <label for="lyout-yes">Preciso de um Layout</label>
+                            <br>
+                            <br>
+                            <input type="radio" name="layout" id="layout-no">
+                            <label for="lyout-yes">Já Tenho um Layout</label>
+                        </div>
+                    </div>
+                    <label for="deadline">Prazo</label>
+                    <input type="range" name="deadline" id="deadline">
+                    <button type="submit" class="btn btn-budget">Enviar</button>
+                </form>
             </div>
         </section>
 
