@@ -2,6 +2,10 @@
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +15,7 @@
 
 :root{
     --font-primary: "Baloo 2", serif;
-    --font-secundary: "Josefin Slab", serif;
+    --font-secundary: "Raleway", serif;
     --font-action: "Mulish", serif;
 }
 
@@ -48,7 +52,7 @@ html {
 }
 
 .show-menu #line1{
-    transform: translate(.4rem, .4rem) rotate(45deg);
+    transform: translate(.3rem, .4rem) rotate(45deg);
 }
 
 .show-menu #line2{
@@ -57,7 +61,7 @@ html {
 }
 
 .show-menu #line3{
-    transform: translate(.2rem, -.5rem) rotate(-45deg);
+    transform: translate(.2rem, -.6rem) rotate(-45deg);
 }
 
 .hamburger span{
@@ -68,7 +72,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E100FF;
+    background-color: #7f00ff;
     color: whitesmoke;
     font-family: var(--font-action);
     opacity: 0;
@@ -78,7 +82,7 @@ html {
 .hamburger span::before{
     content: "";
     position: absolute;
-    border-right: .5rem solid #E100FF;
+    border-right: .5rem solid #7f00ff;
     border-top: .5rem solid transparent;
     border-left: .5rem solid transparent;
     border-bottom: .5rem solid transparent;
@@ -181,7 +185,7 @@ header{
     z-index: 99;
     width: 20rem;
     height: 100vh;
-    background-color: white;
+    background-color: #2b1342;
     position: fixed;
     top: 0;
     right: -20rem;
@@ -207,7 +211,7 @@ header{
 .menu-link{
     font-family: var(--font-action);
     font-size: 2rem;
-    color: #8e9eab;
+    color: whitesmoke;
     transition: color 1s;
 }
 
@@ -384,7 +388,7 @@ header{
 
  .card-info h2{
      font-family: var(--font-primary);
-     font-size: 2;
+     font-size: 2rem;
      font-weight: 500;
      color: #e9e9e9;
  }
@@ -392,8 +396,8 @@ header{
  .card-info h3{
      font-family: var(--font-action);
      font-weight: bolder;
-     color: #E100FF;
-     margin-bottom: 1.5rem;
+     color: #e9e9e9;
+     margin-bottom: 1rem;
  }
 
  .card-info p{
@@ -401,7 +405,7 @@ header{
      color: #eee;
      font-weight: 450;
      width: 80%;
-     margin-bottom: 2rem;
+     margin-bottom: 1rem;
      padding-bottom: 1rem;
  }
 
@@ -419,7 +423,7 @@ header{
  }
 
  .btn:hover{
-    color: #29323c;
+    color: #2f3c29;
  }
 
  .btn:active{
@@ -440,7 +444,7 @@ header{
  .contact-sesion{
     width: 100%;
     height: 100vh;
-    background-color: #525151;
+    background-color: rgb(43 18 66);
     display: flex;
     align-items: center;
     justify-content: center;
